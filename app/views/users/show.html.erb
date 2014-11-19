@@ -10,5 +10,11 @@
   <%= @user.about %>
 </p>
 
+<ul>
+<% @boards.each do |board| %>
+<li><%= board.name %></li>
+<% end %>
+<eul>
+
 <%= link_to 'Edit', edit_user_path(@user) %> |
 <%= link_to 'Back', users_path %>
