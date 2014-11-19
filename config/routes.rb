@@ -1,4 +1,10 @@
 Rails.application.routes.draw do
+  get 'main/about'
+
+  get 'main/home'
+
+  get 'main/contact'
+
   resources :pins
 
   resources :boards
