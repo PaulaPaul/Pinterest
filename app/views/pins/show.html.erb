@@ -15,5 +15,10 @@
   <%= @pin.board.name %>
 </p>
 
+<p>
+  <strong>Belongs to:</strong>
+  <%= @pin.board.user.name %>
+</p>
+
 <%= link_to 'Edit', edit_pin_path(@pin) %> |
 <%= link_to 'Back', pins_path %>

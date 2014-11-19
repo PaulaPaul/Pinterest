@@ -12,12 +12,15 @@ class UsersController < ApplicationController
   def show
     #each user has many boards
     @boards = Board.all
+    #each user has many pins
+    @pins = Pin.all
   end
 
   # GET /users/new
   def new
     @user = User.new
     @boards = Board.all
+    @pins = Pin.all
   end
 
   # GET /users/1/edit

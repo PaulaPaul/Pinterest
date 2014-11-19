@@ -11,8 +11,14 @@
 </p>
 
 <ul>
-<% @boards.each do |board| %>
+<% @user.boards.each do |board| %>
 <li><%= board.name %></li>
+<p>pins on this board</p>
+<ul>
+	<% board.pins.each do |pin| %>
+	<li><%= pin.name %></li>
+	<% end %>
+</ul>
 <% end %>
 <eul>
 
