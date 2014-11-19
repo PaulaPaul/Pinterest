@@ -21,10 +21,14 @@ class BoardsController < ApplicationController
     @board = Board.new
     #each board can have many pins
     @pins = Pin.all
+    # adding a board - need to specify which user it belongs to
+    @users = User.all
   end
 
   # GET /boards/1/edit
   def edit
+    # editing a board - need to specify which user it belongs to
+    @users = User.all
   end
 
   # POST /boards

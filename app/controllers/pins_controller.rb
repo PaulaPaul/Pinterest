@@ -16,10 +16,14 @@ class PinsController < ApplicationController
   # GET /pins/new
   def new
     @pin = Pin.new
+    # when adding a new pin, you need to specify which board it belongs to
+    @boards = Board.all 
   end
 
   # GET /pins/1/edit
   def edit
+    # when editing a pin, you need to specify which board it belongs to
+    @boards = Board.all 
   end
 
   # POST /pins
