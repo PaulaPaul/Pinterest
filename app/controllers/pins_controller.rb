@@ -10,23 +10,27 @@ class PinsController < ApplicationController
   # GET /pins/1
   # GET /pins/1.json
   def show
-    @board = Board.all 
     @user = User.all
+    @boards = Board.all 
   end
+
+  #TODO: figure out how to add a 'pin_it' method on a pin to create a copy on my own board
+  #      would be something like calling newpin = Pin.new(name,about,image) with the current pin
+  #      info, to make a copy of the current pin and add it to the current user
 
   # GET /pins/new
   def new
     @pin = Pin.new
     # when adding a new pin, you need to specify which board it belongs to
+    # TODO: need to figure out how to have the new pin user_id set to the board.user.id when created?
     @boards = Board.all
-    #@users = User.all
   end
 
   # GET /pins/1/edit
   def edit
     # when editing a pin, you need to specify which board it belongs to
-    @boards = Board.all 
-    #@users = User.all
+    @user = User.all
+    @boards = Board.all
   end
 
   # POST /pins

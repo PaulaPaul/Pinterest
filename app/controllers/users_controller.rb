@@ -25,6 +25,8 @@ class UsersController < ApplicationController
 
   # GET /users/1/edit
   def edit
+    @boards = Board.all
+    @pins = Pin.all
   end
 
   # POST /users

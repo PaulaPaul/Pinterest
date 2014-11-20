@@ -23,7 +23,7 @@
     <%= f.label :board_id %><br>
     <%= f.number_field :board_id %>
   </div> -->
-   <div class="field">
+  <div class="field">
     <%= f.label :board_id %><br>
     <%= f.collection_select :board_id, @boards, :id, :name %>
   </div>
