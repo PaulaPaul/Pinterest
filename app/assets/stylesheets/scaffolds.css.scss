@@ -1,13 +1,28 @@
+* {
+  font-family: 'Alegreya Sans', sans-serif;
+} 
 body {
-  background-color: #fff;
-  color: #333;
-  font-family: verdana, arial, helvetica, sans-serif;
-  font-size: 13px;
-  line-height: 18px;
+  background-color: Azure;
+  color: slateblue;
+  font-family: 'Alegreya Sans', sans-serif; 
+  font-size: 16px;
+  line-height: 20px;
+}
+
+thead {
+  background-color: lightgrey;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+table, td, th {
+    border: 1px solid darkgrey;
 }
 
 p, ol, ul, td {
-  font-family: verdana, arial, helvetica, sans-serif;
+  font-family: 'Alegreya Sans', sans-serif; 
   font-size: 13px;
   line-height: 18px;
 }
